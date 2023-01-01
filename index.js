@@ -5,9 +5,7 @@ let apiUrl =
 
 // console.log(apiUrl);
 
-let points = [];
 fetch(apiUrl)
-  //fetch(apiUrl, { mode: "no-cors" })
   .then((response) => {
     // console.log(response);
     return response.json();
@@ -44,11 +42,6 @@ fetch(apiUrl)
       const pointDiv = document.createElement("div");
       pointDiv.classList.add("row", "point");
 
-      // if (index % 2 === 0) {
-      //   pointDiv.classList.add("left");
-      // } else {
-      //   pointDiv.classList.add("right");
-      // }
       index % 2 === 0
         ? pointDiv.classList.add("left")
         : pointDiv.classList.add("right");
@@ -81,9 +74,6 @@ fetch(apiUrl)
 
       place_for_points.appendChild(pointDiv);
     });
-    // const p = document.createElement("p");
-    // p.innerHTML = "lorem ipsum dolor sit";
-    // place_for_points.appendChild(p);
   });
 
 `            
