@@ -1,0 +1,118 @@
+header {
+  background-color: rgb(178, 130, 111);
+  height: 100px;
+}
+header h1#title {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
+}
+
+div.aside {
+  background-color: rgb(126, 92, 79);
+  padding: 10px;
+}
+div.aside aside {
+  height: 100%;
+}
+div.aside #img-div {
+  width: 90%;
+  height: 100%;
+  margin: auto;
+  text-align: center;
+}
+div.aside #img-div #image {
+  max-width: 100%;
+  height: 100%;
+  height: auto;
+  max-height: 500px;
+  display: block;
+  margin: auto;
+}
+div.aside #img-div #img-caption {
+  display: inline-block;
+  padding-top: 10px;
+  height: 50px;
+}
+
+section {
+  background-color: rgb(178, 130, 111);
+  padding-left: 10px;
+}
+section p {
+  text-align: left;
+}
+section p.written {
+  text-align: right;
+}
+section .author {
+  font-style: italic;
+  color: #666;
+}
+section a {
+  color: rgb(7, 7, 7);
+}
+
+footer {
+  background-color: rgb(126, 92, 79);
+  padding: 10px;
+  text-align: right;
+  font-family: monospace;
+}
+footer a {
+  color: white;
+}
+
+.timeline {
+  min-height: 200px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.timeline .row {
+  margin-left: 0px;
+}
+.timeline .point.left .point {
+  border: 1px solid black;
+  padding-top: 5px;
+  text-align: right;
+  border-right: 5px solid black;
+  box-shadow: 32.9px 0px 5.7px rgba(0, 0, 0, 0.02), 48.8px 0px 10.8px rgba(0, 0, 0, 0.028), 56.6px 0px 15.7px rgba(0, 0, 0, 0.035), 60.9px 0px 21.4px rgba(0, 0, 0, 0.042), 66px 0px 30.7px rgba(0, 0, 0, 0.05), 103px 0px 60px rgba(0, 0, 0, 0.07);
+}
+.timeline .point.right .point {
+  border: 1px solid black;
+  padding-top: 5px;
+  text-align: left;
+  box-shadow: -5px 0px 0px 0px black, -32.9px 0px 5.7px rgba(0, 0, 0, 0.02), -48.8px 0px 10.8px rgba(0, 0, 0, 0.028), -56.6px 0px 15.7px rgba(0, 0, 0, 0.035), -60.9px 0px 21.4px rgba(0, 0, 0, 0.042), -66px 0px 30.7px rgba(0, 0, 0, 0.05), -103px 0px 60px rgba(0, 0, 0, 0.07);
+}
+.timeline h3 {
+  font-size: 1.2rem;
+}
+.timeline p {
+  color: white;
+}
+
+html {
+  height: 100%;
+  min-height: 100%;
+  font-size: 16px;
+}
+html .row {
+  margin-right: 0px;
+}
+
+body {
+  background-color: rgb(7, 7, 7);
+  height: 100%;
+  min-height: 100%;
+}
+body #main {
+  background-color: rgb(128, 128, 128);
+  height: 100%;
+}
+
+#tribute-info {
+  padding-top: 20px;
+  margin-top: 20px;
+  border-top: 1px solid black;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,22 @@
+section {
+  background-color: $lightbrown;
+  padding-left: 10px;
+  //   height: calc(100% - (200px + 100px));
+
+  p {
+    text-align: left;
+  }
+
+  p.written {
+    text-align: right;
+  }
+
+  .author {
+    font-style: italic;
+    color: #666;
+  }
+
+  a {
+    color: $black;
+  }
+}

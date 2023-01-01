@@ -1,0 +1,62 @@
+@mixin test-props {
+  border: 1px solid black;
+}
+
+$shadow-multiple-left: 32.9px 0px 5.7px rgba(0, 0, 0, 0.02),
+  48.8px 0px 10.8px rgba(0, 0, 0, 0.028), 56.6px 0px 15.7px rgba(0, 0, 0, 0.035),
+  60.9px 0px 21.4px rgba(0, 0, 0, 0.042), 66px 0px 30.7px rgba(0, 0, 0, 0.05),
+  103px 0px 60px rgba(0, 0, 0, 0.07);
+
+$shadow-multiple-right: -5px 0px 0px 0px black,
+  -32.9px 0px 5.7px rgba(0, 0, 0, 0.02), -48.8px 0px 10.8px rgba(0, 0, 0, 0.028),
+  -56.6px 0px 15.7px rgba(0, 0, 0, 0.035),
+  -60.9px 0px 21.4px rgba(0, 0, 0, 0.042), -66px 0px 30.7px rgba(0, 0, 0, 0.05),
+  -103px 0px 60px rgba(0, 0, 0, 0.07);
+
+$shadow-left: 20px 0px 0px rgba(0, 0, 0, 0.13);
+
+$shadow-right: -5px 0px 0px 0px black, -20px 0px 0px rgba(0, 0, 0, 0.13);
+
+.timeline {
+  min-height: 200px;
+  // @include test-props;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  .row {
+    margin-left: 0px;
+  }
+
+  .point.left .point {
+    @include test-props;
+    padding-top: 5px;
+    text-align: right;
+    border-right: 5px solid black;
+    //box-shadow: $shadow-left;
+    box-shadow: $shadow-multiple-left;
+  }
+
+  .point.left .empty {
+  }
+
+  .point.right .point {
+    @include test-props;
+    padding-top: 5px;
+    text-align: left;
+    // outline: 5px solid black;
+    // box-shadow: -5px 0px 0px 0px black;
+    // box-shadow: $shadow-right;
+    box-shadow: $shadow-multiple-right;
+  }
+
+  .point.right .empty {
+  }
+
+  h3 {
+    font-size: 1.2rem;
+  }
+
+  p {
+    color: white;
+  }
+}

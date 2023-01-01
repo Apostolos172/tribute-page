@@ -1,0 +1,35 @@
+@import "variables";
+@import "header";
+@import "aside";
+@import "section";
+@import "footer";
+@import "timeline-container";
+
+html {
+  // padding: 10px;
+  height: 100%;
+  min-height: 100%;
+  font-size: 16px;
+
+  .row {
+    margin-right: 0px;
+  }
+}
+
+body {
+  // padding: 10px;
+  background-color: $black;
+  height: 100%;
+  min-height: 100%;
+
+  #main {
+    background-color: $lightgrey;
+    height: 100%;
+  }
+}
+
+#tribute-info {
+  padding-top: 20px;
+  margin-top: 20px;
+  border-top: 1px solid black;
+}
